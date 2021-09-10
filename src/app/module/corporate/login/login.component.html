@@ -1,0 +1,33 @@
+<div class="main-container">
+   <div class="form-container">
+       <div class="form-header text-center">
+           <small class="">Euphoria</small>
+           <p class="text-small text-muted"> Welcome back</p>
+           <p class="text-bold-primary">  Login your account </p>
+       </div>
+       <form  [formGroup]=" loginForm" (ngSubmit)="onSubmit()">
+           <div class="form-group mt-3">
+             <label for="" class="text-small text-bold-primary">User ID</label>
+             <input type= "text"class="form-control" name="" id="" formControlName="userID"placeholder="">
+           </div>
+           <div class="mt-1 ">
+               <label for="" class="text-small text-bold-primary">Password</label>
+            <div class="right-inner-addon input-container">
+                <i class="fa fa-eye"></i>
+                <input type="text" formControlName="password"
+                       class="form-control" 
+                       placeholder="" />
+           
+        </div>
+          
+           </div>
+        <p class="text-end text-small  mb-4">Forget password</p>
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary  p-2" type="button">Login</button>
+        </div>
+
+
+      </form>
+   </div>
+
+</div>

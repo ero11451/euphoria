@@ -1,0 +1,14 @@
+<div class="main-container">
+<div class="header"></div>
+<div class="container">
+      <h1 class="header-title">Enrollment</h1>
+      <app-stepper [list] ='list' [ComplitedNumber] = 'currentStep' ></app-stepper>
+      <app-corporatedata *ngIf="currentStep  == 1"></app-corporatedata>
+      <app-dependantdata *ngIf="currentStep  == 2"></app-dependantdata>
+      <app-plan  *ngIf="currentStep == 3"></app-plan>
+</div>
+<div class="footer">
+  <button type="button" (click)="back()"  class="btn  btn-outline-danger">Back</button>
+  <button type="button" (click)="next()" class=" btn btn-primary">Next</button>
+  </div>
+</div>

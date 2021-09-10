@@ -1,0 +1,9 @@
+<div class="stepper-wrapper">
+    <div class="stepper-item " *ngFor="let item of list" 
+     [ngClass]="(ComplitedNumber >= item.state)?'completed':''">
+      <div class="step-counter"> <i class={{item.icon}}></i></div>
+      <div class="step-name">{{item.title}}</div>
+    </div>
+    <div class="stepper-item ">
+    </div>
+  </div>

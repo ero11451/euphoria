@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.form-container{
+    width: 80%;
+    height: fit-content;
+    margin: 3% 5%;
+    background-color: white;
+    padding: 3% ;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.form-group {
+    // padding-left:  5%;
+    
+}
+i{
+    color: #4976BA    ;
+}
+.text-color-primary{
+    color: #00008F;
+    margin: 0px 10px 0px 0px;
+}
+.text-small{
+    font-size: small;
+}
+.col-3{
+    padding: 0px 10px 10px 0px ;
+}
+.btn-primary{
+    background: #00008F;
+    padding: 5px 10px;
+    font-size: 10px;
+    border: none;
+}
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 15px !important;
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    border: 0px;
+    padding: 10px ;
+    pointer-events: none;
+}
+
+
+.right-inner-addon-b {
+    position: relative;
+}
+.right-inner-addon-b input {
+    padding-right: 35px !important;
+}
+.right-inner-addon-b i {
+    position: absolute;
+    right: 0px;
+    padding: 9px;
+    pointer-events: none;
+}
+
+.form-control {
+        width: 100%;
+		padding: 5px 10px 10px 10px !important;
+		margin: 0em !important;
+		box-sizing: border-box;
+}
+
