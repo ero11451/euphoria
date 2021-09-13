@@ -10,17 +10,17 @@ export class CorporatescreenComponent implements OnInit {
   currentStep:number = 1
   list: any = [
     {
-      icon:'fas fa-ballot',
+      icon:'fa fa-user',
       title:'Corporate Data',
       state: 1
     },
     {
-      icon:'fa fa-user',
+      icon:'fa fa-users',
       title:'Dependant Data',
       state: 2
     }, 
     {
-      icon:'far fa-ballot',
+      icon:'fa fa-database',
       title:'Plan Type',
       state: 3
     },
@@ -35,10 +35,18 @@ export class CorporatescreenComponent implements OnInit {
   back(){
      console.log(this.currentStep--)
      this.currentStep = this.currentStep --
-   
+     if (this.currentStep == -1) {
+      this.currentStep = this.currentStep ++
+     }
+     if (this.currentStep == 0) {
+       this.currentStep = 1
+     }
   }
   next(){
     console.log(this.currentStep ++)
-    return this.currentStep = this.currentStep ++
+    this.currentStep = this.currentStep ++
+    if (this.currentStep == 4) {
+      this.currentStep = 1
+    }
   }
 }

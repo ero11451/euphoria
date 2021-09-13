@@ -17,12 +17,12 @@
 .w-10{
   text-align: center;
   background-color: white;
-  width: 8%;
-  padding: 0px 5px 5px 10px;
+  width: 10%;
+  padding: 0px 15px 5px 5px !important;
   font-size: 15px;
 }
 .input-w{
-    width: 70%;
+    width: 65%;
     border-right: none;
 }
 i{
@@ -61,5 +61,8 @@ input {
 		padding: 5px 10px 10px 10px !important;
 		margin: 0em !important;
 		box-sizing: border-box;
+}
+.icon-padding{
+     margin-left: 70px;
 }
 
